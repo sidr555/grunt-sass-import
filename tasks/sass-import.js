@@ -109,7 +109,7 @@ module.exports = function(grunt) {
     }
 
     function buildOutputLine(file) {
-      return '@import \'' + file + '\';\n';
+      return '@import \'' + file.replace(options.basePath, "") + '\';\n';
     }
   });
 
